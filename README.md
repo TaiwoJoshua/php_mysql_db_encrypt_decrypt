@@ -51,10 +51,16 @@ Adjust the paths in the script if you're using a different environment.
 ### 5. Run the script
 Execute the script from the command line:
 ```
-php backup.php
+php encrypt.php
 ```
 
 This will create a backup of the database, encrypt it, and store the encrypted backup file in the backups directory.
+
+```
+php decrypt.php
+```
+
+This will create a decrypted backup, and store the file in the decryptions directory.
 
 ## Directory Structure
 ```
@@ -70,7 +76,10 @@ php_mysql_db_encrypt_decrypt/
 └── README.md              # Project documentation.
 ```
 
-### Security Considerations
-Never expose your .env file: It contains sensitive information like database credentials and encryption keys.
-Use a strong encryption key: Choose a complex and unique encryption key to secure your backup files.
-Secure the backups directory: Store backups in a location that is not publicly accessible.
+## Security Considerations
+- Never expose your .env file: It contains sensitive information like database credentials and encryption keys.
+- Use a strong encryption key: Choose a complex and unique encryption key to secure your backup files.
+- Secure the backups directory: Store backups in a location that is not publicly accessible.
+
+## Contributing
+Feel free to submit issues or pull requests if you find any bugs or have suggestions for new features.
