@@ -3,8 +3,8 @@
 # dependencies
 /.pnp
 .pnp.js
-# /.env
-# .env/
+/.env
+.env/
 /vendor
 vendor/
 
