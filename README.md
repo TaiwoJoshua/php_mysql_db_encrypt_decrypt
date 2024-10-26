@@ -17,25 +17,27 @@ This project is a PHP script that automates the process of backing up a MySQL da
 ## Getting Started
 
 ### 1. Clone the repository
-```bash
+```
 git clone https://github.com/TaiwoJoshua/php_mysql_db_encrypt_decrypt.git
 cd php-database-backup-encryption
-```bash
+```
 
 ## 2. Install dependencies
 Make sure [Composer](https://getcomposer.org/) is installed, then run:
-```bash
+```
 composer install
+```
 
 ## 3. Set up environment variables
 Create a `.env` file in the project root and configure the following variables:
 
-```env
+```
 DB_HOST=your_database_host
 DB_USERNAME=your_database_username
 DB_PASSWORD=your_database_password
 DB_DATABASE=your_database_name
 ENCRYPTION_KEY=your_encryption_key
+```
 
 - Replace your_database_host with your MySQL host (e.g., localhost).
 - Replace your_database_username and your_database_password with your database credentials.
@@ -48,13 +50,14 @@ Adjust the paths in the script if you're using a different environment.
 
 ### 5. Run the script
 Execute the script from the command line:
-```bash
+```
 php backup.php
+```
 
 This will create a backup of the database, encrypt it, and store the encrypted backup file in the backups directory.
 
 ## Directory Structure
-```bash
+```
 php_mysql_db_encrypt_decrypt/
 │
 ├── backups/               # Directory where encrypted backup files are saved.
@@ -65,6 +68,7 @@ php_mysql_db_encrypt_decrypt/
 ├── decrypt.php            # Main script for decrypting backups.
 ├── encrypt.php            # Main script for creating and encrypting backups.
 └── README.md              # Project documentation.
+```
 
 ### Security Considerations
 Never expose your .env file: It contains sensitive information like database credentials and encryption keys.
