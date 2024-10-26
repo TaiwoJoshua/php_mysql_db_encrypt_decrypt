@@ -20,6 +20,7 @@ This project is a PHP script that automates the process of backing up a MySQL da
 ```bash
 git clone https://github.com/TaiwoJoshua/php_mysql_db_encrypt_decrypt.git
 cd php-database-backup-encryption
+```bash
 
 ## 2. Install dependencies
 Make sure [Composer](https://getcomposer.org/) is installed, then run:
